@@ -17,6 +17,7 @@ public class MainClass {
      Framework hibernateFramework=(Framework) context.getBean("hibernateFrameworkBean");
      System.out.println("framework bean"+hibernateFramework);
      System.out.println("Framework Name : - "+hibernateFramework.getName());
+     System.out.println("Imported from git hub");
 	}
 
 }
