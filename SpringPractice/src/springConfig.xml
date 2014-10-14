@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="springFrameworkBean" class="org.hemanth.spring.SpringFramework">
+        <property name="name" value="Spring"></property>
+        <property name="version" value="4.1.1"></property>
+        <property name="onDemand" value="true"></property>
+    </bean>
+    
+    <bean id="hibernateFrameworkBean" class="org.hemanth.spring.HibernateFramework">
+        <property name="name" value="Hibernate"></property>
+        <property name="version" value="4.3.6"></property>
+        <property name="onDemand" value="true"></property>
+    </bean>
+
+    <!-- more bean definitions go here -->
+
+</beans>
