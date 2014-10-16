@@ -11,6 +11,19 @@ public void getFrameworkName()
 {
 	System.out.println("Framework Name :- "+name);
 }
+public SpringFramework()
+{
+	System.out.println("In constructor"+name);
+}
+public void init()
+{
+	System.out.println("In spring init method"+name);
+}
+
+public void destroy()
+{
+	System.out.println("In spring destroy method");
+}
 
 
 public String getName() {
@@ -38,4 +51,6 @@ public void setOnDemand(boolean onDemand) {
 public void setName(String name) {
 	this.name = name;
 }
+
+
 }

@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="springFrameworkBean" class="org.hemanth.spring.SpringFramework">
+    <bean id="springFrameworkBean" class="org.hemanth.spring.SpringFramework" scope="prototype" init-method="init" destroy-method="destroy">
         <property name="name" value="Spring"></property>
         <property name="version" value="4.1.1"></property>
         <property name="onDemand" value="true"></property>
@@ -15,6 +15,9 @@
         <property name="version" value="4.3.6"></property>
         <property name="onDemand" value="true"></property>
     </bean>
+    
+ <bean id="beanPostProcessorDemo" class="org.hemanth.spring.post.BeanPostProcessorDemo">
+    </bean> 
 
     <!-- more bean definitions go here -->
 
